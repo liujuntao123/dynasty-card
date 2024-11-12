@@ -32,7 +32,7 @@ const HistoryCardViewer = () => {
     // 为所有卡片创建公共路径的图片 URL
     const publicImages = {};
     cards.forEach((card) => {
-      publicImages[card.image] = `/public/assets${card.image}`; // 直接使用图片路径
+      publicImages[card.image] = `/assets${card.image}`; // 直接使用图片路径
     });
     setLoadedImages(publicImages);
   }, []);
