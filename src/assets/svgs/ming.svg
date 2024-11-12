@@ -1,0 +1,218 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 400">
+  <!-- [前面的背景和边框代码保持不变] -->
+  <!-- 背景 -->
+  <rect width="260" height="400" fill="#f4e4bc"/>
+ 
+  <!-- 装饰边框 -->
+  <!-- 主边框 -->
+  <rect x="12" y="12" width="236" height="376"
+        fill="none" stroke="#8b4513" stroke-width="2"/>
+        
+  <!-- 内层装饰边框 -->
+  <rect x="18" y="18" width="224" height="364"
+        fill="none" stroke="#8b4513" stroke-width="1"/>
+        
+  <!-- 四角云纹装饰 -->
+  <!-- 左上角 -->
+  <path d="M18 18 Q25 25 18 32 Q25 39 18 46 M25 18 Q32 25 25 32 Q32 39 25 46"
+        fill="none" stroke="#8b4513" stroke-width="1"/>
+  <!-- 右上角 -->
+  <path d="M242 18 Q235 25 242 32 Q235 39 242 46 M235 18 Q228 25 235 32 Q228 39 235 46"
+        fill="none" stroke="#8b4513" stroke-width="1"/>
+  <!-- 左下角 -->
+  <path d="M18 382 Q25 375 18 368 Q25 361 18 354 M25 382 Q32 375 25 368 Q32 361 25 354"
+        fill="none" stroke="#8b4513" stroke-width="1"/>
+  <!-- 右下角 -->
+  <path d="M242 382 Q235 375 242 368 Q235 361 242 354 M235 382 Q228 375 235 368 Q228 361 235 354"
+        fill="none" stroke="#8b4513" stroke-width="1"/>
+        
+  <!-- 回字纹装饰 - 中点装饰 -->
+  <!-- 左边中点 -->
+  <path d="M12 194 H25 V207 H12" 
+        fill="none" stroke="#8b4513" stroke-width="1"/>
+  <!-- 右边中点 -->
+  <path d="M248 194 H235 V207 H248" 
+        fill="none" stroke="#8b4513" stroke-width="1"/>
+  <!-- 上边中点 -->
+  <path d="M124 12 V25 H137 V12" 
+        fill="none" stroke="#8b4513" stroke-width="1"/>
+  <!-- 下边中点 -->
+  <path d="M124 388 V375 H137 V388" 
+        fill="none" stroke="#8b4513" stroke-width="1"/>
+  
+  <!-- 标题 -->
+  <text x="135" y="65"
+        text-anchor="middle"
+        font-family="STXingkai, STLiti, LiSu, 华文行楷, 隶书"
+        font-size="38"
+        font-weight="bold"
+        fill="#8b4513"
+        style="letter-spacing: 6px;">明朝</text>
+ 
+  <!-- 年号 -->
+  <text x="130" y="100"
+        text-anchor="middle"
+        font-family="STKaiti, KaiTi"
+        font-size="18"
+        fill="#8b4513">1368年 - 1644年</text>
+ 
+  <!-- 优化后的故宫太和殿中心图案 -->
+  <g transform="translate(75, 110)">
+    <!-- 台基平台 -->
+    <path d="M0 95 H110 V100 H0 Z" fill="#8b4513"/>
+    <path d="M5 90 H105 V95 H5 Z" fill="#8b4513"/>
+    <path d="M10 85 H100 V90 H10 Z" fill="#8b4513"/>
+    
+    <!-- 石阶 -->
+    <path d="M45 85 H65 V100 H45 Z" fill="#8b4513"/>
+    <path d="M45 85 H65 L55 80 Z" fill="#8b4513"/>
+    
+    <!-- 主殿体 -->
+    <rect x="15" y="35" width="80" height="50" fill="#8b4513"/>
+    
+    <!-- 左右厢房 -->
+    <path d="M5 45 L15 35 L15 85 L5 95 Z" fill="#8b4513"/>
+    <path d="M105 45 L95 35 L95 85 L105 95 Z" fill="#8b4513"/>
+    
+    <!-- 飞檐重檐屋顶 -->
+    <!-- 下层屋顶 -->
+    <path d="M0 45 C20 40, 45 38, 55 35 C65 38, 90 40, 110 45" 
+          fill="none" stroke="#8b4513" stroke-width="4"/>
+    <!-- 上层屋顶 -->
+    <path d="M10 35 L55 8 L100 35" fill="#8b4513"/>
+    <path d="M5 37 C25 30, 45 25, 55 8 C65 25, 85 30, 105 37" 
+          fill="none" stroke="#8b4513" stroke-width="3"/>
+    
+    <!-- 屋脊装饰 -->
+    <!-- 正脊 -->
+    <path d="M55 8 L55 5" stroke="#8b4513" stroke-width="3"/>
+    <!-- 垂脊 -->
+    <path d="M15 35 C25 33, 35 31, 45 35" fill="none" stroke="#f4e4bc" stroke-width="1"/>
+    <path d="M65 35 C75 33, 85 31, 95 35" fill="none" stroke="#f4e4bc" stroke-width="1"/>
+    
+    <!-- 正门 -->
+    <g transform="translate(45, 50)">
+      <!-- 门框 -->
+      <rect x="0" y="0" width="20" height="35" fill="#f4e4bc"/>
+      <!-- 门楣 -->
+      <path d="M0 0 Q10 -5 20 0" fill="#8b4513"/>
+      <!-- 门柱 -->
+      <rect x="-2" y="0" width="3" height="35" fill="#8b4513"/>
+      <rect x="19" y="0" width="3" height="35" fill="#8b4513"/>
+    </g>
+    
+    <!-- 檐下斗拱 -->
+    <g transform="translate(20, 35)">
+      <!-- 左侧斗拱 -->
+      <path d="M0 0 H5 V2 H0" fill="#8b4513"/>
+      <path d="M7 0 H12 V2 H7" fill="#8b4513"/>
+    </g>
+    <g transform="translate(78, 35)">
+      <!-- 右侧斗拱 -->
+      <path d="M0 0 H5 V2 H0" fill="#8b4513"/>
+      <path d="M7 0 H12 V2 H7" fill="#8b4513"/>
+    </g>
+    
+    <!-- 兽面吻兽 -->
+    <path d="M52 6 L55 4 L58 6" fill="#8b4513"/>
+    <g transform="translate(15, 33)">
+      <path d="M0 0 L3 -2 L6 0" fill="#8b4513"/>
+    </g>
+    <g transform="translate(89, 33)">
+      <path d="M0 0 L3 -2 L6 0" fill="#8b4513"/>
+    </g>
+    
+    <!-- 装饰龙纹 -->
+    <path d="M25 40 Q35 35 45 40 M65 40 Q75 35 85 40" 
+          fill="none" stroke="#f4e4bc" stroke-width="1"/>
+    <path d="M25 45 Q35 40 45 45 M65 45 Q75 40 85 45" 
+          fill="none" stroke="#f4e4bc" stroke-width="1"/>
+  </g>
+
+  <text x="130" y="225"
+        text-anchor="middle"
+        font-family="STKaiti, KaiTi"
+        font-size="12"
+        fill="#8b4513">紫禁城太和殿</text>
+
+  <!-- [后面的皇帝图像和诗句部分保持不变] -->
+  <!-- 开国皇帝 -->
+  <g transform="translate(40, 230) scale(0.65)">
+    <g transform="translate(35, 15)">
+      <!-- 冕冠 -->
+      <path d="M10 0 H40 L45 10 H5 Z" fill="#8b4513"/>
+      <path d="M15 5 H35" stroke="#f4e4bc" stroke-width="2"/>
+     
+      <!-- 脸部和身体 -->
+      <circle cx="25" cy="20" r="10" fill="#8b4513"/>
+      <path d="M15 35 L35 35 L40 60 L10 60 Z" fill="#8b4513"/>
+     
+      <!-- 装饰纹样：明朝龙纹 -->
+      <path d="M20 35 L30 35 M22 45 L28 45"
+            stroke="#f4e4bc" stroke-width="2"/>
+    </g>
+   
+    <text x="60" y="110"
+          text-anchor="middle"
+          font-family="STKaiti, KaiTi"
+          font-size="16"
+          fill="#8b4513">明太祖朱元璋</text>
+  </g>
+
+  <!-- 末代皇帝 -->
+  <g transform="translate(155, 230) scale(0.65)">
+    <g transform="translate(35, 15) rotate(15)">
+      <!-- 歪斜的冕冠 -->
+      <path d="M10 0 H40 L45 10 H5 Z"
+            fill="#8b4513" style="opacity: 0.7"/>
+     
+      <!-- 脸部和身体 -->
+      <circle cx="25" cy="20" r="10" fill="#8b4513" style="opacity: 0.7"/>
+      <path d="M15 35 L35 35 L38 60 L12 60 Z"
+            fill="#8b4513" style="opacity: 0.7"/>
+     
+      <!-- 破损效果 -->
+      <path d="M8 5 L12 5 M38 8 L42 8 M15 40 L20 40"
+            stroke="#f4e4bc" stroke-width="1"/>
+    </g>
+   
+    <text x="60" y="110"
+          text-anchor="middle"
+          font-family="STKaiti, KaiTi"
+          font-size="16"
+          fill="#8b4513">明思宗朱由检</text>
+  </g>
+
+  <!-- 时间变迁线 -->
+  <g transform="translate(115, 300)">
+    <path d="M0 0 L40 0"
+          stroke="#8b4513"
+          stroke-width="2"
+          stroke-dasharray="5 3"
+          fill="none"/>
+    <path d="M40 0 L33 -4 L33 4 Z"
+          fill="#8b4513"/>
+    <text x="20" y="-8"
+          text-anchor="middle"
+          font-family="STKaiti, KaiTi"
+          font-size="11"
+          fill="#8b4513">276年</text>
+  </g>
+ 
+  <!-- 朝代特点 -->
+  <text x="140" y="340"
+        text-anchor="middle"
+        font-family="STXinwei, STKaiti, 华文新魏, 华文楷体"
+        font-size="15"
+        fill="#8b4513"
+        style="letter-spacing: 1px;
+               text-shadow: 1px 1px 2px rgba(139, 69, 19, 0.3);">明朝盛世威天下，</text>
+  <text x="140" y="360"
+        text-anchor="middle"
+        font-family="STXinwei, STKaiti, 华文新魏, 华文楷体"
+        font-size="15"
+        fill="#8b4513"
+        style="letter-spacing: 1px;
+               text-shadow: 1px 1px 2px rgba(139, 69, 19, 0.3);">故宫壮丽史留名。</text>
+  
+</svg>

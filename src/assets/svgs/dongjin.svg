@@ -1,0 +1,196 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 400">
+  <!-- 背景 -->
+  <rect width="260" height="400" fill="#f4e4bc"/>
+ 
+  <!-- 装饰边框 -->
+  <!-- 主边框 -->
+  <rect x="12" y="12" width="236" height="376"
+        fill="none" stroke="#8b4513" stroke-width="2"/>
+        
+  <!-- 内层装饰边框 -->
+  <rect x="18" y="18" width="224" height="364"
+        fill="none" stroke="#8b4513" stroke-width="1"/>
+        
+  <!-- 四角云纹装饰 -->
+  <!-- 左上角 -->
+  <path d="M18 18 Q25 25 18 32 Q25 39 18 46 M25 18 Q32 25 25 32 Q32 39 25 46"
+        fill="none" stroke="#8b4513" stroke-width="1"/>
+  <!-- 右上角 -->
+  <path d="M242 18 Q235 25 242 32 Q235 39 242 46 M235 18 Q228 25 235 32 Q228 39 235 46"
+        fill="none" stroke="#8b4513" stroke-width="1"/>
+  <!-- 左下角 -->
+  <path d="M18 382 Q25 375 18 368 Q25 361 18 354 M25 382 Q32 375 25 368 Q32 361 25 354"
+        fill="none" stroke="#8b4513" stroke-width="1"/>
+  <!-- 右下角 -->
+  <path d="M242 382 Q235 375 242 368 Q235 361 242 354 M235 382 Q228 375 235 368 Q228 361 235 354"
+        fill="none" stroke="#8b4513" stroke-width="1"/>
+        
+  <!-- 回字纹装饰 - 中点装饰 -->
+  <!-- 左边中点 -->
+  <path d="M12 194 H25 V207 H12" 
+        fill="none" stroke="#8b4513" stroke-width="1"/>
+  <!-- 右边中点 -->
+  <path d="M248 194 H235 V207 H248" 
+        fill="none" stroke="#8b4513" stroke-width="1"/>
+  <!-- 上边中点 -->
+  <path d="M124 12 V25 H137 V12" 
+        fill="none" stroke="#8b4513" stroke-width="1"/>
+  <!-- 下边中点 -->
+  <path d="M124 388 V375 H137 V388" 
+        fill="none" stroke="#8b4513" stroke-width="1"/>
+  
+  <!-- 标题 -->
+  <text x="135" y="65"
+        text-anchor="middle"
+        font-family="STXingkai, STLiti, LiSu, 华文行楷, 隶书"
+        font-size="38"
+        font-weight="bold"
+        fill="#8b4513"
+        style="letter-spacing: 6px;">东晋</text>
+ 
+  <!-- 年号 -->
+  <text x="130" y="100"
+        text-anchor="middle"
+        font-family="STKaiti, KaiTi"
+        font-size="18"
+        fill="#8b4513">317年 - 420年</text>
+ 
+  <!-- 中心图案：优化后的《洛神赋图》风格画卷 -->
+  <g transform="translate(75, 110)">
+    <!-- 画卷外框 -->
+    <rect x="0" y="0" width="110" height="100" 
+          fill="#f4e4bc" stroke="#8b4513" stroke-width="1"/>
+    
+    <!-- 云纹背景装饰 -->
+    <path d="M10 15 Q20 10 25 15 Q30 20 35 15 M40 15 Q50 10 55 15 Q60 20 65 15"
+          fill="none" stroke="#8b4513" stroke-width="0.5" opacity="0.6"/>
+          
+    <!-- 远山 -->
+    <path d="M5 30 Q25 20 45 30 Q65 40 85 30 Q95 25 105 30"
+          fill="none" stroke="#8b4513" stroke-width="0.8"/>
+          
+    <!-- 近山 -->
+    <path d="M0 40 Q20 30 40 40 Q60 50 80 40 Q90 35 100 40"
+          fill="none" stroke="#8b4513" stroke-width="1"/>
+    
+    <!-- 洛神形象 -->
+    <!-- 裙裾 -->
+    <path d="M45 45 Q50 65 40 80 M45 45 Q40 65 50 80"
+          fill="none" stroke="#8b4513" stroke-width="1"/>
+    
+    <!-- 飘带 -->
+    <path d="M45 40 Q60 35 65 45 Q70 55 80 50 M45 42 Q55 38 60 45 Q65 52 75 48"
+          fill="none" stroke="#8b4513" stroke-width="0.8"/>
+          
+    <!-- 手臂 -->
+    <path d="M45 50 Q55 45 60 55"
+          fill="none" stroke="#8b4513" stroke-width="0.8"/>
+          
+    <!-- 头部与发髻 -->
+    <path d="M43 40 Q45 35 47 40 M42 38 Q45 32 48 38"
+          fill="none" stroke="#8b4513" stroke-width="0.8"/>
+    
+    <!-- 水纹 -->
+    <path d="M10 85 Q20 82 30 85 Q40 88 50 85 Q60 82 70 85 Q80 88 90 85"
+          fill="none" stroke="#8b4513" stroke-width="0.5" opacity="0.8"/>
+    <path d="M15 90 Q25 87 35 90 Q45 93 55 90 Q65 87 75 90 Q85 93 95 90"
+          fill="none" stroke="#8b4513" stroke-width="0.5" opacity="0.8"/>
+          
+    <!-- 画卷装饰边 -->
+    <rect x="0" y="0" width="110" height="100" 
+          fill="none" stroke="#8b4513" stroke-width="1.5"/>
+    
+    <!-- 卷轴效果 -->
+    <path d="M0 0 C-5 20 -5 80 0 100" 
+          fill="none" stroke="#8b4513" stroke-width="1"/>
+    <path d="M110 0 C115 20 115 80 110 100" 
+          fill="none" stroke="#8b4513" stroke-width="1"/>
+  </g>
+
+  <!-- 文字说明 -->
+  <text x="130" y="225"
+        text-anchor="middle"
+        font-family="STKaiti, KaiTi"
+        font-size="12"
+        fill="#8b4513">顾恺之《洛神赋图》</text>
+
+  <!-- 开国皇帝 -->
+  <g transform="translate(40, 230) scale(0.65)">
+    <g transform="translate(35, 15)">
+      <!-- 冕冠 -->
+      <path d="M10 0 H40 L45 10 H5 Z" fill="#8b4513"/>
+      <path d="M15 5 H35" stroke="#f4e4bc" stroke-width="2"/>
+     
+      <!-- 脸部和身体 -->
+      <circle cx="25" cy="20" r="10" fill="#8b4513"/>
+      <path d="M15 35 L35 35 L40 60 L10 60 Z" fill="#8b4513"/>
+     
+      <!-- 装饰纹样：原始图腾纹样 -->
+      <path d="M20 35 L30 35 M22 45 L28 45"
+            stroke="#f4e4bc" stroke-width="2"/>
+    </g>
+   
+    <text x="60" y="110"
+          text-anchor="middle"
+          font-family="STKaiti, KaiTi"
+          font-size="16"
+          fill="#8b4513">晋元帝司马睿</text>
+  </g>
+
+  <!-- 末代皇帝 -->
+  <g transform="translate(155, 230) scale(0.65)">
+    <g transform="translate(35, 15) rotate(15)">
+      <!-- 歪斜的冕冠 -->
+      <path d="M10 0 H40 L45 10 H5 Z"
+            fill="#8b4513" style="opacity: 0.7"/>
+     
+      <!-- 脸部和身体 -->
+      <circle cx="25" cy="20" r="10" fill="#8b4513" style="opacity: 0.7"/>
+      <path d="M15 35 L35 35 L38 60 L12 60 Z"
+            fill="#8b4513" style="opacity: 0.7"/>
+     
+      <!-- 破损效果 -->
+      <path d="M8 5 L12 5 M38 8 L42 8 M15 40 L20 40"
+            stroke="#f4e4bc" stroke-width="1"/>
+    </g>
+   
+    <text x="60" y="110"
+          text-anchor="middle"
+          font-family="STKaiti, KaiTi"
+          font-size="16"
+          fill="#8b4513">晋恭帝司马德文</text>
+  </g>
+
+  <!-- 时间变迁线 -->
+  <g transform="translate(115, 300)">
+    <path d="M0 0 L40 0"
+          stroke="#8b4513"
+          stroke-width="2"
+          stroke-dasharray="5 3"
+          fill="none"/>
+    <path d="M40 0 L33 -4 L33 4 Z"
+          fill="#8b4513"/>
+    <text x="20" y="-8"
+          text-anchor="middle"
+          font-family="STKaiti, KaiTi"
+          font-size="11"
+          fill="#8b4513">103年</text>
+  </g>
+ 
+  <!-- 朝代特点 -->
+  <text x="140" y="340"
+        text-anchor="middle"
+        font-family="STXinwei, STKaiti, 华文新魏, 华文楷体"
+        font-size="15"
+        fill="#8b4513"
+        style="letter-spacing: 1px;
+               text-shadow: 1px 1px 2px rgba(139, 69, 19, 0.3);">东晋偏安江左地，</text>
+  <text x="140" y="360"
+        text-anchor="middle"
+        font-family="STXinwei, STKaiti, 华文新魏, 华文楷体"
+        font-size="15"
+        fill="#8b4513"
+        style="letter-spacing: 1px;
+               text-shadow: 1px 1px 2px rgba(139, 69, 19, 0.3);">书画风流韵事传。</text>
+  
+</svg>
