@@ -7,11 +7,11 @@
 
 ## 项目截图
 
-![alt text](Clip_2024-11-12_09-32-43.png)
+![alt text](Clip_2024-11-12_14-44-39.png)
 
-![alt text](Clip_2024-11-12_09-33-05.png)
+![alt text](Clip_2024-11-12_14-44-59.png)
 
-![alt text](Clip_2024-11-12_09-28-22.png)
+![alt text](Clip_2024-11-12_14-45-14.png)
 
 - prompt可以参考prompt/dynasty-card-generator.txt
 
