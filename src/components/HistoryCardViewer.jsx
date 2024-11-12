@@ -27,21 +27,14 @@ const HistoryCardViewer = () => {
     }
   }));
 
+  // 移除 useEffect 中的动态导入逻辑，因为图片现在在 public 目录下
   useEffect(() => {
-    // 动态导入所有图片
-    cards.forEach(async (card) => {
-      try {
-        // 修改图片导入路径
-        const imagePath = `../assets/svgs${card.image.split('/svgs')[1]}`;
-        const imageModule = await import(imagePath);
-        setLoadedImages(prev => ({
-          ...prev,
-          [card.image]: imageModule.default
-        }));
-      } catch (error) {
-        console.error(`Error loading image for ${card.title}:`, error);
-      }
+    // 为所有卡片创建公共路径的图片 URL
+    const publicImages = {};
+    cards.forEach((card) => {
+      publicImages[card.image] = `/public/assets${card.image}`; // 直接使用图片路径
     });
+    setLoadedImages(publicImages);
   }, []);
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -124,7 +117,7 @@ const HistoryCardViewer = () => {
                   onClick={() => setIsDropdownOpen(false)}
                 >
                   <img
-                    src={loadedImages[card.image]}
+                    src={loadedImages[card.image]} // 现在直接使用图片路径
                     alt={card.title}
                     className="w-full h-full object-cover"
                     onError={(e) => {
