@@ -23,7 +23,7 @@ const HistoryCardViewer = () => {
       founder: data.开国皇帝,
       lastEmperor: data.末代皇帝,
       centralImage: data.中心图案,
-      details: data.详情
+      details: data.详情.replace(/\[[\u4e00-\u9fa5 ]*\d+\]|\[参\d+\]|\[书\d+\]|\[注 \d+\]/g, '')
     }
   }));
 
@@ -139,10 +139,14 @@ const HistoryCardViewer = () => {
               {cards[currentIndex].year}
             </p>
             <div className="space-y-3">
-             
-              <p className="text-lg font-light italic mt-4 leading-relaxed text-gray-800">
-                {cards[currentIndex].details.details}
-              </p>
+              {cards[currentIndex].details.details.split('\n').map((paragraph, index) => (
+                <p 
+                  key={index} 
+                  className="text-lg font-light italic mt-4 leading-relaxed text-gray-800"
+                >
+                  {paragraph}
+                </p>
+              ))}
             </div>
           </div>
         </div>
