@@ -29,7 +29,7 @@ const HistoryCardViewer = () => {
 
   // 移除 useEffect 中的动态导入逻辑，因为图片现在在 public 目录下
   useEffect(() => {
-    // 为所有卡片创建公共路径的图片 URL
+    // 为所卡片创建公共路径的图片 URL
     const publicImages = {};
     cards.forEach((card) => {
       publicImages[card.image] = `/assets${card.image}`; // 直接使用图片路径
@@ -130,22 +130,36 @@ const HistoryCardViewer = () => {
             </Swiper>
           </div>
 
-          {/* 文字内容 - 使用相同的最大宽度 */}
-          <div className="p-4 bg-white w-full max-w-md mx-auto">
-            <h2 className="text-5xl font-light mb-3 tracking-wide text-gray-900">
-              {cards[currentIndex].title}
-            </h2>
-            <p className="text-xl font-light text-gray-600 mb-6">
-              {cards[currentIndex].year}
-            </p>
-            <div className="space-y-3">
+          {/* 文字内容区域 - 更新样式 */}
+          <div className="px-6 py-6 bg-gradient-to-b from-white to-gray-50 w-full max-w-md mx-auto rounded-b-2xl shadow-sm">
+            {/* 标题区域 - 重新设计的样式 */}
+            <div className="mb-4">
+              <div className="flex flex-col gap-2">
+                <h2 className="text-5xl font-bold text-gray-900 tracking-tight font-serif">
+                  {cards[currentIndex].title}
+                </h2>
+                <div className="flex items-center gap-2">
+                  <div className="h-0.5 w-12 bg-gray-400"></div>
+                  <span className="text-lg text-gray-500 font-medium tracking-wider">
+                    {cards[currentIndex].year}
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* 详细内容 - 引用样式效果 */}
+            <div className="space-y-7">
               {cards[currentIndex].details.details.split('\n').map((paragraph, index) => (
-                <p 
-                  key={index} 
-                  className="text-lg font-light italic mt-4 leading-relaxed text-gray-800"
-                >
-                  {paragraph}
-                </p>
+                <div key={index} className="pl-4 border-l-4 border-gray-200 hover:border-gray-300 transition-colors"> 
+                  <p className={`
+                    relative mb-0 leading-relaxed
+                    ${index === 0 
+                      ? "text-xl text-gray-800 font-medium tracking-wide mb-8 first-letter:text-3xl first-letter:font-bold first-letter:mr-1 first-letter:float-left first-letter:leading-none" 
+                      : "text-lg text-gray-600 font-normal tracking-wide"}
+                  `}>
+                    {paragraph}
+                  </p>
+                </div>
               ))}
             </div>
           </div>
